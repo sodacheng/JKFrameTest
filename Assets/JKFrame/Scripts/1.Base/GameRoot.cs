@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class GameRoot : SingletonMono<GameRoot>
 {
-    // Start is called before the first frame update
-    public string str = "str";
     void Start()
     {
         
