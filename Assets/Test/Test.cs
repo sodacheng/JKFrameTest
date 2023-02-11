@@ -1,14 +1,17 @@
 ﻿using System;
 using System.Collections.Generic;
 using UnityEngine;
-using System.Reflection; // 反射的命名空间
-using Sirenix.OdinInspector; // 使用Odin插件的特性要应用改命名空间
 
+public class Test1 : Singleton<Test1>
+{
+    public string text = "5555";
+}
 public class Test : MonoBehaviour
 {
     private void Start()
     {
-
+        Debug.Log(Test1.Instance.text);
+        Debug.Log(GameRoot.Instance.str);
     }
 }
 
