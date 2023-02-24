@@ -10,7 +10,7 @@ public class SingletonMono<T> : MonoBehaviour where T : SingletonMono<T>
 {
     public static T Instance;
 
-    protected void Awake()
+    protected virtual void Awake()
     {
         Instance = this as T;
     }
